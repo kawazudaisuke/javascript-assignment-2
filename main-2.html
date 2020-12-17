@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main-2.css">
+        <title>電卓</title>
+    </head>
+   
+    <body>
+      <div class="calculator">
+        <h3>電卓</h3>
+        <div id="display"></div> <!--ここに数字等を表示-->
+        <div class="first-line">
+         <input class="button" type="button" value=1 onclick="input(this.value)">
+         <input class="button" type="button" value=2 onclick="input(this.value)">
+         <input class="button" type="button" value=3 onclick="input(this.value)">
+         <input class="button" type="button" value=+ onclick="input(this.value)">
+        </div>
+        <div class="second-line">
+         <input class="button" type="button" value=4 onclick="input(this.value)">
+         <input class="button" type="button" value=5 onclick="input(this.value)">
+         <input class="button" type="button" value=6 onclick="input(this.value)">
+         <input class="button" type="button" value=- onclick="input(this.value)">
+        </div>
+        <div class="third-line">
+         <input class="button" type="button" value=7 onclick="input(this.value)">
+         <input class="button" type="button" value=8 onclick="input(this.value)">
+         <input class="button" type="button" value=9 onclick="input(this.value)">
+         <input class="button" type="button" value=/ onclick="input(this.value)">
+        </div>
+        <div class="forth-line">
+         <input class="button" type="button" value=0 onclick="input(this.value)">
+         <input class="button" type="button" value=00 onclick="input(this.value)">
+         <input class="button" type="button" value=. onclick="input(this.value)">
+         <input class="button" type="button" value=* onclick="input(this.value)">
+        </div>
+        <div class="end-line">
+         <input class="button AC" type="button" onclick=allClear() value= "AC" />
+         <input class="button Answer" type="button" onclick=answer() value= "=" />
+        </div>
+      </div>
+       <script src="main-2.js"></script>
+    </body>
+</html>
